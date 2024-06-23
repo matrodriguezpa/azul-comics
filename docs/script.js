@@ -1,16 +1,32 @@
-// script.js
-let slideIndex = 0;
+var slide_index = 1;
+slidesDisplay(slide_index);
 
-function showSlides() {
-  let slides = document.querySelectorAll(".slideshow-slide");
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.transform = `translateX(${-slideIndex * 100}%)`;
-  }
-  slideIndex++;
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  }
+function nextSlide(n) {
+  slidesDisplay((slide_index += n));
 }
 
-showSlides();
-setInterval(showSlides, 5000); // Change image every 5 seconds
+function currentSlide(n) {
+  slidesDisplay((slide_index = n));
+}
+
+function slidesDisplay(n) {
+  var i;
+  var slides = document.getElementsByClassName("showSlider");
+  var totalSlides = slides.length;
+  
+  if (n > totalSlides) {
+    slide_index = 1;
+  }
+  if (n < 1) {
+    slide_index = totalSlides;
+  }
+
+  for (i = 0; i < totalSlides; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < 4; i++) {
+    var slideToShow = (slide_index + i - 1) % totalSlides;
+    slides[slideToShow].style.display = "block";
+  }
+}
