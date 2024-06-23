@@ -157,6 +157,8 @@ footer {
   max-height: 600px;
   margin-left: 150px;
   margin-right: 150px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .left,
