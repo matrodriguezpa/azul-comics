@@ -1,21 +1,11 @@
-import React from "react"
+import React from 'react';
 
-export default function Footer() {
+const Footer = () => {
     return (
-        <div>
-            <div className="container text-center">
-                <div className="row">
-                    <div className="col">
-                        Column
-                    </div>
-                    <div className="col">
-                        Column
-                    </div>
-                    <div className="col">
-                        Column
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
+        <footer>
+            <p>&copy; 2024 Azul Comics. Todos los derechos reservados.</p>
+        </footer>
+    );
+};
+
+export default Footer;

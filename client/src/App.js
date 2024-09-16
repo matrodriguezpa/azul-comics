@@ -1,14 +1,23 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from "./components/Navbar";
-import HomePage from "./pages/HomePage";
-import Footer from "./components/Footer";
+import React from 'react';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
+import Slideshow from './components/Slideshow';
+import Sidebar from './components/Sidebar';
+import './style.css';
+
 
 function App() {
     return (
-        <div className="App">
-            <Navbar/>
-            <HomePage></HomePage>
+        <div>
+
+            <Header/>
+            <Slideshow/>
+            <div className="content-container">
+                <Sidebar/>
+                <MainContent/>
+                <Sidebar/>
+            </div>
             <Footer/>
         </div>
     );
