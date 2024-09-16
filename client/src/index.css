@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    color: #ffffff;
+    margin-left: 15px;
+    font-size: 1.2em;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slideshow-slide {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slideshow-slide img {
+    width: 33.3333%;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height for horizontal scrollbar */
+}
+
+/* Style the track (background) */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Style the thumb (scroll handle) */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Dark grey color */
+    border-radius: 10px; /* Rounded scrollbar thumb */
+    border: 3px solid #f0f0f0; /* Adds padding around the thumb */
+}
+
+/* Style the thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker grey on hover */
+}
+
+/* Optional: Style the scrollbar corner where the horizontal and vertical scrollbars meet */
+::-webkit-scrollbar-corner {
+    background-color: #f0f0f0; /* Same as track background */
+}
+
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px
+}
+
+.main-content {
+    flex: 3;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+}
+
+.recent-chapters {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.recent-chapters h2 {
+    border-bottom: 2px solid #003366;
+    margin-bottom: 20px;
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+article {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+.img-container {
+    border-radius: 15px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img-container > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+article img {
+    width: 100%;
+}
+
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.showSlider img {
+    width: 100%;
+}
+
+.showSlider {
+    cursor: pointer;
+}
+
+.showSlider:hover {
+    opacity: 0.7;
+    animation: ease;
+}
+
+.slide-show {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+    min-height: 200px;
+    margin: 30px 60px;
+}
+
+.left,
+.right {
+    cursor: pointer;
+    width: auto;
+    padding: 10px;
+    color: #ffffff;
+    background: #003366;
+    transition: 0.6s ease;
+    border-radius: 5px;
+}
+
+
+.left:hover,
+.right:hover {
+    background-color: rgba(115, 115, 115, 0.8);
+}
+
+.contentBook {
+    color: black;
+    font-size: 12px;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

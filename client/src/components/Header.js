@@ -1,15 +1,15 @@
 import React from 'react';
 
-const Header = () => {
+const Header = ({ setActivePage }) => {
     return (
         <header>
             <div className="header-container">
                 <h1>Azul Comics</h1>
                 <nav>
                     <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#sobrenosotros">Sobre Nosotros</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#Home" onClick={() => setActivePage('Home')}>Inicio</a></li>
+                        <li><a href="#Comic" onClick={() => setActivePage('Comic')}>Comic</a></li>
+                        <li><a href="#Chapter" onClick={() => setActivePage('Chapter')}>Chapter</a></li>
                     </ul>
                 </nav>
                 <div className="social-media">
